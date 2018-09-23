@@ -1,0 +1,35 @@
+{
+	"name" : "kappit/components",
+	"type" : "library",
+	"description" : "A library containing classes to be used in a component based architecture.",
+	"keywords" : [
+		"kappit",
+		"components",
+		"architecture"
+	],
+	"license" : "MIT",
+	"minimum-stability" : "stable",
+	"version" : "1.0.0",
+	"authors" : [
+		{
+			"name" : "kappit",
+			"email" : "kasper.h90@outlook.dk"
+		}
+	],
+	"require" : {
+		"icanboogie/inflector" : "1.4.4",
+		"php" : ">=7.2.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Components\\" : "App/Components",
+			"" : "App/Routes",
+			"Models\\" : "App/Models",
+			"Templates\\" : "App/Templates",
+			"Services\\" : "App/Services",
+			"StronglyTypedViews\\" : "App/StronglyTypedViews",
+			"Kappit\\AbstractClasses\\" : "src/AbstractClasses",
+			"Kappit\\Core\\" : "src/Core"
+		}
+	}
+}
